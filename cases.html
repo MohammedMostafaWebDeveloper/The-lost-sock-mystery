@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lost Sock Mystery</title>
+    <link rel="icon" href="assets/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #content{
+            height: 100vh;
+            width: 100vw;
+            padding: 10px;
+            padding-top: 80px;
+            display: flex;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+            overflow-y: auto;
+        }
+        .card{
+            background-color: #ba181b25;
+            border: 1px solid #ba181b;
+            min-width: 300px;
+            height: 200px;
+            flex: 1;
+            border-radius: 10px;
+            padding: 10px;
+            font-family: 'sa', sans-serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        red{
+            font-family: 'sa', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #dd3b3e;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            <img src="assets/logo.svg">
+            <div id="logo-text">
+                The Lost Sock<p>Mystery</p>
+            </div>
+        </div>
+        <div id="menu" onclick="showNav()">
+            <img src="assets/Menu.svg">
+        </div>
+        <div id="nav-buttons">
+            <a class="nav" href="index.html">Home</a>
+            <a class="nav selected" href="cases.html">Cases</a>
+            <a class="nav" href="suspects.html">Supects</a>
+            <a class="nav" href="report.html">Report</a>
+            <a class="nav" href="about.html">About</a>
+        </div>
+    </div>
+    <div id="content">
+        <div class="card">
+            <p><red>Color:</red> Blue</p>
+            <p><red>Size:</red> Large</p>
+            <p><red>Last scene:</red> In the laundry</p>
+            <p><red>Status:</red> Searching</p>
+        </div>
+        <div class="card">
+            <p><red>Color:</red> White</p>
+            <p><red>Size:</red> Large</p>
+            <p><red>Last scene:</red> In the washing machine</p>
+            <p><red>Status:</red> Found</p>
+        </div>
+        <div class="card">
+            <p><red>Color:</red> White</p>
+            <p><red>Size:</red> Medium</p>
+            <p><red>Last scene:</red> On the floor near the door</p>
+            <p><red>Status:</red> Searching</p>
+        </div>
+        <div class="card">
+            <p><red>Color:</red> Black</p>
+            <p><red>Size:</red> Small</p>
+            <p><red>Last scene:</red> Under the bed</p>
+            <p><red>Status:</red> Searching</p>
+        </div>
+        <div class="card">
+            <p><red>Color:</red> Red</p>
+            <p><red>Size:</red> Undefined</p>
+            <p><red>Last scene:</red> Inside the shoe</p>
+            <p><red>Status:</red> Found</p>
+        </div>
+        <div class="card">
+            <p><red>Color:</red> Grey</p>
+            <p><red>Size:</red> Large</p>
+            <p><red>Last scene:</red> On the laundry rack</p>
+            <p><red>Status:</red> Searching</p>
+        </div>
+        <div class="card">
+            <p><red>Color:</red> White</p>
+            <p><red>Size:</red> Small</p>
+            <p><red>Last scene:</red> Inside the pants' pocket</p>
+            <p><red>Status:</red> Searching</p>
+        </div>
+        <div class="card">
+            <p><red>Color:</red> Navy Blue</p>
+            <p><red>Size:</red> Medium</p>
+            <p><red>Last scene:</red> Under the bed</p>
+            <p><red>Status:</red> Searching</p>
+        </div>
+        <div class="card">
+            <p><red>Color:</red> Black</p>
+            <p><red>Size:</red> Large</p>
+            <p><red>Last scene:</red> In the kitchen</p>
+            <p><red>Status:</red> Found</p>
+        </div>
+    </div>
+    <script src="nav.js"></script>
+</body>
+</html>

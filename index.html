@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lost Sock Mystery</title>
+    <link rel="icon" href="assets/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: max(50px, 10%);
+            opacity: 0;
+            transition: opacity 2s;
+        }
+        .text{
+            font-family: 'ss3', serif;
+            font-size: 30px; 
+            flex: 1;
+            height: fit-content;
+        }
+        .section img{
+            width: 30%;
+            transform: translateY(100px);
+            transition: transform ease-out 1s;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .section{
+                flex-direction: column;
+            }
+            .text{
+                flex: 0;
+                font-size: 20px;
+            }
+            .section img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            <img src="assets/logo.svg">
+            <div id="logo-text">
+                The Lost Sock<p>Mystery</p>
+            </div>
+        </div>
+        <div id="menu" onclick="showNav()">
+            <img src="assets/Menu.svg">
+        </div>
+        <div id="nav-buttons">
+            <a class="nav selected" href="index.html">Home</a>
+            <a class="nav" href="cases.html">Cases</a>
+            <a class="nav" href="suspects.html">Supects</a>
+            <a class="nav" href="report.html">Report</a>
+            <a class="nav" href="about.html">About</a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text">
+            A guy once had two pairs of socks, one of them was red and the other was white
+        </div>
+        <img src="assets/None lost.png">
+    </div>
+    <div class="section">
+        <div class="text">
+            One day, he woke up to get to work, when he was about to leave, he found out that one white sock disappeared. He wore the red one anyways.
+        </div>
+        <img src="assets/One lost.png">
+    </div>
+    <div class="section">
+        <div class="text">
+            But the next day something worse happened, one red sock disappeared too. He had no choice but to wear a white sock and a red sock. When he went to work, everyone notices it and it was awkward.
+        </div>
+        <img src="assets/Two lost.png">
+    </div>
+    <div class="section">
+        <div class="text">
+            Since then, he decided to found and organization to search in lost socks cases, they managed to find some but others we lost forever.
+        </div>
+    </div>
+    <script src="nav.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
