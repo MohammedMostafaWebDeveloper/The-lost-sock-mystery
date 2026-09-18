@@ -6,6 +6,39 @@
     <title>The Lost Sock Mystery</title>
     <link rel="icon" href="assets/logo.svg">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #content{
+            height: 100vh;
+            width: 100vw;
+            padding: 20px;
+            padding-top: 80px;
+            display: flex;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            overflow-y: auto;
+        }
+        .card{
+            background-color: #ba181b25;
+            border: 1px solid #ba181b;
+            min-width: 250px;
+            height: auto;
+            flex: 1;
+            border-radius: 10px;
+            padding: 10px;
+            font-family: 'sa', sans-serif;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        red{
+            font-family: 'sa', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #dd3b3e;
+        }
+    </style>
 </head>
 <body>
     <div id="nav">
@@ -24,6 +57,38 @@
             <a class="nav selected" href="suspects.html">Supects</a>
             <a class="nav" href="report.html">Report</a>
             <a class="nav" href="about.html">About</a>
+        </div>
+    </div>
+    <div id="content">
+        <div class="card">
+            <p><red>Name:</red> Bed</p>
+            <p><red>Danger level:</red> 4</p>
+            <p><red>Number of victims:</red> 156209</p>
+            <p><red>Details:</red> It used to kidnap the victums and hide them under it, who would search under a bed for a sock</p>
+        </div>
+        <div class="card">
+            <p><red>Name:</red> Washing machine</p>
+            <p><red>Danger level:</red> 5</p>
+            <p><red>Number of victims:</red> 36005420</p>
+            <p><red>Details:</red> Two happy pair of socks enter but when they leave, one of them is lost. Nobody ever knew where it goes</p>
+        </div>
+        <div class="card">
+            <p><red>Name:</red> Laundry Rack</p>
+            <p><red>Danger level:</red> 2</p>
+            <p><red>Number of victims:</red> 8920</p>
+            <p><red>Details:</red> Socks trust it holding them, but sometimes it bertrays a sock. If it makes it after falling, the wind will carry it away</p>
+        </div>
+        <div class="card">
+            <p><red>Name:</red> Shoes</p>
+            <p><red>Danger level:</red> 1</p>
+            <p><red>Number of victims:</red> 1530</p>
+            <p><red>Details:</red> It is usually your fault putting your sock in there and forgetting about it</p>
+        </div>
+        <div class="card">
+            <p><red>Name:</red> Laundry</p>
+            <p><red>Danger level:</red> 2</p>
+            <p><red>Number of victims:</red> 53050</p>
+            <p><red>Details:</red> Jackets and pants sometimes hide socks inside them. You will not find your sock until you use that piece of clothing.</p>
         </div>
     </div>
     <script src="nav.js"></script>

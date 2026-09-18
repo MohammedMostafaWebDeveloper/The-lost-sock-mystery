@@ -6,6 +6,41 @@
     <title>The Lost Sock Mystery</title>
     <link rel="icon" href="assets/logo.svg">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #con{
+            display: flex;
+            flex-direction: column;
+            width: min(90%, 500px);
+            gap: 5px;
+        }
+        #con p{
+            font-size: 14px;
+        }
+        #con input{
+            flex: 1;
+            font-size: 16px;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        #con button{
+            background-color: #ba181b;
+            outline: none;
+            border: none;
+            padding: 7px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+        #con button:hover{
+            background-color: #941013;
+        }
+    </style>
 </head>
 <body>
     <div id="nav">
@@ -26,6 +61,33 @@
             <a class="nav" href="about.html">About</a>
         </div>
     </div>
+    <div id="con">
+        <p>What is the color of you lost sock?</p>
+        <input>
+        <p>What size is it?</p>
+        <input>
+        <p>Where did you last see it?</p>
+        <input>
+        <button onclick="report()">Report</button>
+    </div>
     <script src="nav.js"></script>
+    <script>
+        function report() {
+            var inputs = document.querySelectorAll("input")
+            var report = true
+            inputs.forEach(input => {
+                if (input.value == "") {
+                    report = false
+                }
+            })
+            if (report) {
+                alert("Reported successfully")
+                window.location.href = "index.html"
+            }
+            else {
+                alert("Please fill all the fields")
+            }
+        }
+    </script>
 </body>
 </html>
